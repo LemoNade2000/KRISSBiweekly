@@ -8,8 +8,8 @@ import seaborn as sns
 import os   
 
 def collectData(ticker): 
-    start_date = "2022-01-01"
-    end_date = "2022-11-01"
+    start_date = "2018-01-01"
+    end_date = "2022-10-01"
     data = pdr.get_data_yahoo(ticker, start=start_date, end=end_date)
     data = data.drop(columns= ['High', 'Low', 'Open', 'Volume', 'Adj Close'], axis = 1)
     sns.lineplot(x = data.index, y = data['Close'])
