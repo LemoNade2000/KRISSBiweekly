@@ -20,3 +20,7 @@ def collectData(ticker):
 os.makedirs('Data', exist_ok=True) 
 collectData("TSLA")
 collectData("^TNX")
+collectData("NVDA")
+collectData("TWTR")
+collectData("AXON")
+collectData("FDP")
